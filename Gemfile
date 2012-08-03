@@ -2,18 +2,14 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.7'
 gem 'bootstrap-sass', '2.0.0'
+gem 'bcrypt-ruby', '3.0.1'
 
 group :development, :test do
   gem 'rspec-rails', '2.10.0'
-  gem 'guard-rspec', '0.5.5'
+  gem 'sqlite3'
 end
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-group :development do
- gem 'sqlite3'
-end
+gem 'annotate', '2.5.0', group: :development
 
 group :production do
  gem 'pg'
