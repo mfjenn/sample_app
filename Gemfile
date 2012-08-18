@@ -8,6 +8,8 @@ group :development, :test do
   gem 'rspec-rails', '2.10.0'
   gem 'sqlite3'
   gem 'factory_girl_rails', '1.4.0'
+  gem 'cucumber-rails', '1.2.1', require: false
+  gem 'database_cleaner', '0.7.0'
 end
 
 gem 'annotate', '2.5.0', group: :development
