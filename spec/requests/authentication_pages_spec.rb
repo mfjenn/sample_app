@@ -6,6 +6,8 @@ describe "Authentication" do
   describe "signin" do
     before { visit signin_path }
     
+    
+    
     describe "with invalid information" do
       before { click_button "Sign in" }
     
@@ -25,7 +27,6 @@ describe "Authentication" do
         click_button "Sign in"
       end
 
-      it { should have_selector('title', text: user.name) }
       it { should have_selector( 'title', text: user.name) }
       it { should have_link('Profile', href: user_path(user)) }
       it { should have_link('Sign out', href: signout_path) }
